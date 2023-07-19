@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header,
+.footer {
+  background-color: rgb(70, 70, 70);
+  height: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+}
+
+.sidebar {
+  height: 45vh;
+  width: 200px;
+}
+
+.sidebar-red {
+  background-color: red;
+  height: 100%;
+}
+
+.sidebar-green {
+  background-color: green;
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.main-image {
+  float: left;
+  margin-right: 20px;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: rgb(70, 70, 70) e;
+  height: 50px;
+}
+
+/* Адаптация для мобильного вида */
+@media (max-width: 767px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .main-image {
+    float: none;
+    margin-right: 0;
+  }
+}
